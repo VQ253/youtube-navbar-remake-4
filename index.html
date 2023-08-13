@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Libre+Baskerville&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    
+<!--First Project-->
+</head>
+<body>
+    <div class = "navbar" id = navbar__static>
+       <div class = "navbar-header">
+        <button class = button; id = "button-header" onclick="hideTaskbar()"><img src="./logo/navigation-bar.png" alt="home" style="width: 24px; height:24px;"></button>
+        <img class = "logo" src="./logo/kisspng-youtube-red-logo-computer-icons-youtube-5abe39fec046a9.7547336915224161267876.jpg" alt="youtube-icon">
+       </div>
+       <div class="navbar-body" id = "navbar">
+        <div class="navbar-body__first" id = "navbar-body__hide">
+            <div class = "taskbar-icon">
+                <img src="./logo/homepage.png" class = "icon" style="width:  24px; height: 24px;">
+                <p class = "icon-name">Home</p>
+            </div>
+            <div class = "taskbar-icon">
+                <img src="./logo/youtube_shorts.png" class = "icon" style="width:  24px; height: 24px;">
+                <p class = "icon-name">Shorts</p>
+            </div>
+            <div class = "taskbar-icon">
+                <img src="./logo/subscribe.png" class = "icon" style="width:  24px; height: 24px;">
+                <p class = "icon-name">Subcription</p>
+            </div>
+       </div>
+       <div class="navbar-body__second">
+        <div class = "taskbar-icon">
+            <img src="./logo/library.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Library</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/history.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">History</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/youtube.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Your videos</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/clock.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Watch later</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/like.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Liked videos</p>
+        </div>
+        <div class = "taskbar-icon">
+            <button id = "button-more" class="button" onclick="showMore()">
+            <img src="./logo/down-arrow.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Show more</p>
+        </button>
+        </div>
+   </div>
+    <div class="playlist" id = "playlist">
+        <div class = "taskbar-icon">
+            <img src="./logo/playlist.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Playlist</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/playlist.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Playlist</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/playlist.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Playlist</p>
+        </div>
+        <div class = "taskbar-icon">
+            <img src="./logo/playlist.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Playlist</p>
+        </div>
+        <div class = "taskbar-icon">
+            <button id = "button-less" class="button" onclick="showLess()">
+            <img src="./logo/up-arrow.png" class = "icon" style="width:  24px; height: 24px;">
+            <p class = "icon-name">Show less</p>
+        </button>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+</body>
+    <script>
+        function hideTaskbar() {
+        var x = document.getElementById("navbar")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        }
+
+        function showMore() {
+        var x = document.getElementById("playlist")
+        var y = document.getElementById("button-more")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none"
+        } else {
+            x.style.display = "none";
+            
+        }
+
+    
+        }
+
+        function showLess() {
+        var x = document.getElementById("playlist")
+        var y = document.getElementById("button-more")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+            y.style.display = "flex"
+        }
+
+
+        }
+
+
+        </script>
+</body>
+</html>
